@@ -281,7 +281,7 @@ a {
   z-index: 1;
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 2rem;
+  gap: 2rem 4rem;
   min-height: 24.5rem;
   border-top: 1px solid var(--line);
   padding: 7rem 15.2vw 9rem;
@@ -325,6 +325,19 @@ a {
   font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.footer-credit {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: min(42rem, 100%);
+  margin: 2.5rem 0 0;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.footer-credit a {
+  color: var(--red-soft);
 }
 
 .direct-intro {
@@ -491,10 +504,24 @@ a {
 
   .site-footer {
     grid-template-columns: 1fr;
+    justify-items: center;
     padding: 5rem 1.5rem 8rem;
+    text-align: center;
   }
 
   .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2.2rem;
+  }
+
+  .footer-links div {
+    justify-items: center;
+  }
+
+  .footer-credit {
+    margin-top: 1.4rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
   }
 }
