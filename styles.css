@@ -139,7 +139,7 @@ a {
 .video-frame {
   width: min(48rem, 88vw);
   aspect-ratio: 16 / 9;
-  margin: 4.4rem 0 0;
+  margin: 3.2rem 0 0;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 16px;
@@ -158,7 +158,7 @@ a {
 
 .track-description {
   max-width: 52rem;
-  margin: 2.5rem 0 0;
+  margin: 3rem 0 0;
   color: var(--text);
   font-size: 1.08rem;
   font-weight: 600;
@@ -205,17 +205,6 @@ a {
 .release-title span:last-child,
 .direct-intro h1 span {
   color: var(--red-soft);
-}
-
-.stacked-actions {
-  display: grid;
-  justify-items: center;
-  gap: 1.28rem;
-  margin-top: 3.4rem;
-}
-
-.stacked-actions .pill {
-  width: min(19rem, 82vw);
 }
 
 .bottom-dock {
@@ -468,11 +457,6 @@ a {
   .release-title,
   .direct-intro h1 {
     font-size: clamp(5.2rem, 24vw, 7.8rem);
-  }
-
-  .stacked-actions {
-    gap: 1rem;
-    margin-top: 2.6rem;
   }
 
   .bottom-dock {
