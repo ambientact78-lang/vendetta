@@ -110,12 +110,13 @@ a {
   text-align: center;
   min-height: calc(100vh - 8rem);
   padding-top: clamp(5.8rem, 8.8vh, 7.2rem);
+  padding-bottom: clamp(7rem, 10vh, 9rem);
 }
 
 .cover-wrap {
   display: grid;
   place-items: center;
-  min-height: clamp(37rem, 49vw, 41rem);
+  min-height: clamp(36rem, 47vw, 40rem);
   width: 100%;
 }
 
@@ -138,7 +139,7 @@ a {
 .video-frame {
   width: min(48rem, 88vw);
   aspect-ratio: 16 / 9;
-  margin: 3.4rem 0 0;
+  margin: 4.4rem 0 0;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 16px;
@@ -155,6 +156,23 @@ a {
   border: 0;
 }
 
+.track-description {
+  max-width: 52rem;
+  margin: 2.5rem 0 0;
+  color: var(--text);
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.track-description strong,
+.track-description em {
+  color: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
 .eyebrow {
   margin: 0 0 1rem;
   color: var(--red-soft);
@@ -165,8 +183,7 @@ a {
 }
 
 .release-title,
-.direct-intro h1,
-.connect-section h2 {
+.direct-intro h1 {
   margin: 0;
   font-family: "Bebas Neue", Impact, sans-serif;
   font-weight: 400;
@@ -194,7 +211,7 @@ a {
   display: grid;
   justify-items: center;
   gap: 1.28rem;
-  margin-top: 3rem;
+  margin-top: 3.4rem;
 }
 
 .stacked-actions .pill {
@@ -230,50 +247,6 @@ a {
   width: 1px;
   height: 1.4rem;
   background: var(--line);
-}
-
-.connect-section {
-  display: grid;
-  justify-items: center;
-  align-content: start;
-  text-align: center;
-  min-height: calc(100vh - 8rem);
-  padding-top: clamp(8.6rem, 13vh, 11rem);
-}
-
-.connect-section h2 {
-  font-size: clamp(4rem, 5.35vw, 5.7rem);
-  font-style: italic;
-}
-
-.connect-copy {
-  max-width: 45rem;
-  margin: 2rem 0 3.25rem;
-  color: var(--muted);
-  font-size: 1.03rem;
-  font-weight: 800;
-  line-height: 1.7;
-}
-
-.link-list {
-  display: grid;
-  gap: 1rem;
-  width: min(43.8rem, 100%);
-}
-
-.link-list a {
-  display: grid;
-  align-items: center;
-  min-height: 4.35rem;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 1rem 1.65rem;
-  text-align: left;
-  font-size: 0.98rem;
-  font-weight: 900;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  background: rgba(5, 3, 3, 0.34);
 }
 
 .site-footer {
@@ -467,11 +440,11 @@ a {
   }
 
   .section-tall {
-    padding: 5.5rem 1.25rem;
+    padding: 5.5rem 1.25rem 7rem;
   }
 
   .cover-wrap {
-    min-height: 23rem;
+    min-height: 24rem;
   }
 
   .cover-art {
@@ -481,13 +454,25 @@ a {
 
   .video-frame {
     width: min(22rem, 88vw);
-    margin-bottom: 2.4rem;
+    margin-top: 3.2rem;
     border-radius: 12px;
+  }
+
+  .track-description {
+    width: min(34rem, 88vw);
+    margin-top: 2rem;
+    font-size: 0.98rem;
+    line-height: 1.75;
   }
 
   .release-title,
   .direct-intro h1 {
     font-size: clamp(5.2rem, 24vw, 7.8rem);
+  }
+
+  .stacked-actions {
+    gap: 1rem;
+    margin-top: 2.6rem;
   }
 
   .bottom-dock {
