@@ -3,73 +3,133 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vendetta - Come Ride With Me</title>
-    <meta name="description" content="Come Ride With Me, the single from Vendetta.">
-    <meta property="og:title" content="Vendetta - Come Ride With Me">
-    <meta property="og:description" content="Watch, stream, and connect with Vendetta.">
-    <meta property="og:image" content="assets/come-ride-with-me-cover.png">
+    <title>TRYOUTS — Vendetta</title>
+    <meta name="description" content="TRYOUTS by Vendetta, produced by Ambient Act. A dark R&amp;B and pop album about heartbreak without closure.">
+    <meta name="theme-color" content="#2b0715">
+    <meta property="og:title" content="TRYOUTS — Vendetta">
+    <meta property="og:description" content="Heartbreak without closure. Produced by Ambient Act.">
+    <meta property="og:image" content="assets/tryouts-cover.png">
+    <meta property="og:type" content="music.album">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Inter:wght@500;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand-mark" href="index.html">Vendetta</a>
+      <a class="brand-mark" href="#home" aria-label="Vendetta, back to top">Vendetta</a>
+      <a class="header-link" href="#listen">Listen now</a>
     </header>
 
     <main>
-      <section class="hero-panel section-tall" id="home">
-        <div class="cover-wrap">
-          <img class="cover-art" src="assets/come-ride-with-me-cover.png" alt="Come Ride With Me cover art by Vendetta">
+      <section class="hero" id="home" aria-labelledby="release-title">
+        <div class="hero-copy">
+          <h1 id="release-title">Tryouts</h1>
+          <p class="producer-line">Produced by <strong>Ambient Act</strong></p>
+          <p class="hero-intro">Heartbreak without closure.</p>
         </div>
 
-        <p class="eyebrow">New Single &middot; Out Now</p>
-        <h1 class="release-title">
-          <span>Come Ride</span>
-          <span>With Me</span>
-        </h1>
+        <figure class="cover-stage">
+          <div class="cover-frame">
+            <img class="cover-art" src="assets/tryouts-cover.png" alt="TRYOUTS album cover by Vendetta, featuring six women seated in a pink audition room">
+          </div>
+        </figure>
 
-        <p class="track-description">Vendetta reunites with longtime collaborator Ambient Act to deliver <strong>"Come Ride With Me,"</strong> an 80s synth-driven trap anthem packed with energy and atmosphere. Blending hard-hitting 808s, soaring siren synths, and infectious melodies, the track pulls listeners into a late-night ride filled with momentum and emotion. From the first note to the final fade, <em>Come Ride With Me</em> is a journey you won't want to end.</p>
+        <div class="hero-actions">
+          <a class="presave-button" href="https://open.spotify.com/artist/3orquUnBADLYKIZwhU2bjW?si=xbFsuVucQ4eFPCskoPPDcA" target="_blank" rel="noreferrer">
+            Pre-save on Spotify
+          </a>
+          <div class="secondary-actions" aria-label="More album actions">
+            <a href="https://open.spotify.com/artist/3orquUnBADLYKIZwhU2bjW?si=xbFsuVucQ4eFPCskoPPDcA" target="_blank" rel="noreferrer">Spotify</a>
+            <a href="https://music.apple.com/us/artist/vendetta/595860139" target="_blank" rel="noreferrer">Apple Music</a>
+            <a class="story-link" href="#story">Enter the story</a>
+          </div>
+        </div>
 
-        <div class="video-frame" aria-label="Come Ride With Me official video">
+        <p class="scroll-note" aria-hidden="true">Scroll to discover</p>
+      </section>
+
+      <section class="story" id="story" aria-labelledby="story-title">
+        <div class="story-heading">
+          <p class="section-number">The record</p>
+          <h2 id="story-title">Beautiful on the surface.<br><em>Bruised underneath.</em></h2>
+        </div>
+
+        <div class="story-body">
+          <p class="lead">Vendetta reunites with longtime producer <strong>Ambient Act</strong> for <em>TRYOUTS</em>, a dark R&amp;B and pop fusion built on synth-heavy atmospheres, deep 808s, and emotionally charged production.</p>
+          <p>At its core, <em>TRYOUTS</em> follows the collapse of a relationship where heartbreak doesn’t lead to healing. It leads to obsession, resentment, temptation, and revenge. Across the album, Vendetta mourns what was lost while navigating the toxic ways two people try to replace each other, hurt each other, and prove who can move on first.</p>
+          <p>Dreamy melodies collide with heavy low-end and late-night production, creating a record that can sound beautiful even when the story underneath it isn’t. <em>TRYOUTS</em> is heartbreak without closure: the messy process of auditioning new people for a role that, deep down, you’re still not ready to replace.</p>
+        </div>
+
+        <blockquote>
+          <span aria-hidden="true">“</span>
+          <p>Auditioning new people for a role you’re still not ready to replace.</p>
+        </blockquote>
+      </section>
+
+      <section class="videos" id="videos" aria-labelledby="videos-title">
+        <div class="videos-heading">
+          <p class="section-number">Watch</p>
+          <h2 id="videos-title">Vendetta</h2>
+        </div>
+
+        <div class="featured-video">
           <iframe
-            src="https://www.youtube.com/embed/Fo9qMPSjpgY"
-            title="Vendetta - Come Ride With Me official video"
+            src="https://www.youtube-nocookie.com/embed/-ztHbjthl_A"
+            title="Vendetta featured video on YouTube"
+            loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen>
           </iframe>
+        </div>
+
+        <a class="youtube-watch-link" href="https://www.youtube.com/watch?v=-ztHbjthl_A" target="_blank" rel="noreferrer">Watch on YouTube</a>
+      </section>
+
+      <section class="listen" id="listen" aria-labelledby="listen-title">
+        <div class="listen-art" aria-hidden="true">
+          <img src="assets/tryouts-cover.png" alt="">
+        </div>
+        <div class="listen-copy">
+          <p class="section-number">Listen</p>
+          <h2 id="listen-title">Take your seat.</h2>
+          <p>Step into the world of <em>TRYOUTS</em>.</p>
+          <div class="platform-links">
+            <a href="https://open.spotify.com/artist/3orquUnBADLYKIZwhU2bjW?si=xbFsuVucQ4eFPCskoPPDcA" target="_blank" rel="noreferrer"><span>Spotify</span><span aria-hidden="true">↗</span></a>
+            <a href="https://music.apple.com/us/artist/vendetta/595860139" target="_blank" rel="noreferrer"><span>Apple Music</span><span aria-hidden="true">↗</span></a>
+            <a href="https://www.youtube.com/@Official-Vendetta" target="_blank" rel="noreferrer"><span>YouTube</span><span aria-hidden="true">↗</span></a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div>
-        <a class="brand-mark footer-brand" href="index.html">Vendetta</a>
-        <p>Come Ride With Me</p>
-        <p>878 Records</p>
-        <p>&copy; 2026 &middot; All Rights Reserved</p>
-      </div>
-      <div class="footer-links">
-        <div>
-          <span>Listen</span>
-          <a href="https://open.spotify.com/artist/3orquUnBADLYKIZwhU2bjW?si=xbFsuVucQ4eFPCskoPPDcA" target="_blank" rel="noreferrer">Spotify</a>
-          <a href="https://music.apple.com/us/artist/vendetta/595860139" target="_blank" rel="noreferrer">Apple Music</a>
-          <a href="https://www.youtube.com/watch?v=Fo9qMPSjpgY" target="_blank" rel="noreferrer">YouTube</a>
+      <div class="footer-main">
+        <div class="footer-identity">
+          <a class="brand-mark footer-brand" href="#home">Vendetta</a>
+          <p class="footer-release">TRYOUTS</p>
+          <p class="footer-produced">Produced by Ambient Act</p>
         </div>
-        <div>
-          <span>Follow</span>
-          <a href="https://www.instagram.com/kris.kdotz?igsh=ODA4emFtOTk3bWI0" target="_blank" rel="noreferrer">Instagram</a>
-        </div>
+
+        <nav class="footer-nav" aria-label="Footer links">
+          <div class="footer-nav-group">
+            <span>Listen</span>
+            <a href="https://open.spotify.com/artist/3orquUnBADLYKIZwhU2bjW?si=xbFsuVucQ4eFPCskoPPDcA" target="_blank" rel="noreferrer">Spotify</a>
+            <a href="https://music.apple.com/us/artist/vendetta/595860139" target="_blank" rel="noreferrer">Apple Music</a>
+            <a href="https://www.youtube.com/@Official-Vendetta" target="_blank" rel="noreferrer">YouTube</a>
+          </div>
+          <div class="footer-nav-group">
+            <span>Follow</span>
+            <a href="https://www.instagram.com/kris.kdotz?igsh=ODA4emFtOTk3bWI0" target="_blank" rel="noreferrer">Instagram</a>
+          </div>
+        </nav>
       </div>
-      <p class="footer-credit">Powered By <a href="https://reimagebs.com" target="_blank" rel="noreferrer">REIMAGE BUSINESS SOLUTIONS</a></p>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 · 878 Records · All Rights Reserved</p>
+        <a href="https://reimagebs.com" target="_blank" rel="noreferrer">Website by Reimage Business Solutions</a>
+      </div>
     </footer>
 
-    <nav class="bottom-dock" aria-label="Quick links">
-      <a href="https://www.youtube.com/watch?v=Fo9qMPSjpgY" target="_blank" rel="noreferrer">YouTube</a>
-      <a href="https://open.spotify.com/artist/3orquUnBADLYKIZwhU2bjW?si=xbFsuVucQ4eFPCskoPPDcA" target="_blank" rel="noreferrer">Spotify</a>
-      <a href="https://music.apple.com/us/artist/vendetta/595860139" target="_blank" rel="noreferrer">Apple</a>
-      <a href="https://www.instagram.com/kris.kdotz?igsh=ODA4emFtOTk3bWI0" target="_blank" rel="noreferrer">Follow</a>
-    </nav>
   </body>
 </html>
