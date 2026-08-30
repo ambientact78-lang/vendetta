@@ -71,10 +71,11 @@ img {
   grid-template-areas:
     "copy cover"
     "actions cover";
-  grid-template-columns: minmax(20rem, 1fr) minmax(26rem, 1fr);
+  grid-template-columns: minmax(0, 34rem) minmax(0, 34rem);
   grid-template-rows: auto auto;
   align-items: center;
-  column-gap: clamp(5rem, 9vw, 11rem);
+  justify-content: center;
+  column-gap: clamp(6rem, 10vw, 14rem);
   row-gap: 2rem;
   min-height: 100svh;
   overflow: hidden;
@@ -114,6 +115,7 @@ img {
 .hero-actions {
   position: relative;
   z-index: 1;
+  min-width: 0;
 }
 
 .hero-copy {
@@ -184,17 +186,14 @@ img {
   width: min(20rem, 100%);
 }
 
+.purchase-button,
 .presave-button {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  border: 1px solid #f7c4d1;
   border-radius: 999px;
   padding: 1.2rem 1.5rem;
-  color: var(--cream);
-  background: linear-gradient(100deg, var(--berry), #d34572);
-  box-shadow: 0 1rem 3rem rgba(10, 0, 4, 0.24), 0 0 2rem rgba(232, 143, 163, 0.13);
   font-size: 0.69rem;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -202,46 +201,48 @@ img {
   transition: background 180ms ease, color 180ms ease, transform 180ms ease;
 }
 
-.presave-button:hover,
-.presave-button:focus-visible {
+.purchase-button {
+  position: relative;
+  border: 1px solid #facbd7;
+  color: var(--cream);
+  background: linear-gradient(100deg, #a91f50 0%, #d63d70 56%, #ed7898 100%);
+  box-shadow: 0 1.25rem 3.5rem rgba(10, 0, 4, 0.32), 0 0 2.7rem rgba(232, 143, 163, 0.22);
+}
+
+.purchase-icon {
+  position: absolute;
+  left: 1.45rem;
+  width: 1.05rem;
+  height: 1.05rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.75;
+}
+
+.purchase-button:hover,
+.purchase-button:focus-visible {
   color: var(--ink);
   background: var(--cream);
   transform: translateY(-2px);
 }
 
-.secondary-actions {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.6rem;
-  width: 100%;
+.presave-button {
+  justify-self: center;
+  width: 88%;
+  border: 1px solid #f7c4d1;
+  padding: 1rem 1.35rem;
+  color: var(--cream);
+  background: linear-gradient(100deg, var(--berry), #d34572);
+  box-shadow: 0 1rem 3rem rgba(10, 0, 4, 0.24), 0 0 2rem rgba(232, 143, 163, 0.13);
 }
 
-.secondary-actions a {
-  display: grid;
-  min-height: 2.75rem;
-  place-items: center;
-  border: 1px solid var(--cream);
-  border-radius: 999px;
-  padding: 0.65rem 0.8rem;
+.presave-button:hover,
+.presave-button:focus-visible {
   color: var(--ink);
   background: var(--cream);
-  box-shadow: 0 0.45rem 1.2rem rgba(10, 0, 4, 0.12);
-  font-size: 0.6rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  transition: background 180ms ease, color 180ms ease, transform 180ms ease;
-}
-
-.secondary-actions .youtube-link {
-  grid-column: 1 / -1;
-}
-
-.secondary-actions a:hover,
-.secondary-actions a:focus-visible {
-  color: var(--wine);
-  background: var(--blush);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .cover-stage {
@@ -630,7 +631,7 @@ blockquote p {
 
 .footer-nav {
   display: grid;
-  grid-template-columns: repeat(2, minmax(8rem, auto));
+  grid-template-columns: minmax(8rem, auto);
   gap: clamp(3rem, 7vw, 7rem);
   padding-top: 0.65rem;
 }
@@ -790,14 +791,14 @@ blockquote p {
     gap: 0.75rem;
   }
 
-  .presave-button {
+  .purchase-button {
     min-height: 3.5rem;
     font-size: 0.72rem;
   }
 
-  .secondary-actions a {
-    min-height: 3rem;
-    font-size: 0.64rem;
+  .presave-button {
+    min-height: 3.1rem;
+    font-size: 0.69rem;
   }
 
   .scroll-note {
@@ -881,7 +882,7 @@ blockquote p {
   }
 
   .footer-nav {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
     border-top: 1px solid var(--line-light);
     padding-top: 2rem;
