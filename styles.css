@@ -245,6 +245,15 @@ img {
   transform: translateY(-2px);
 }
 
+.support-note {
+  margin: 0.15rem 0 0;
+  color: rgba(255, 248, 241, 0.5);
+  font-size: 0.68rem;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
 .cover-stage {
   margin: 0;
 }
