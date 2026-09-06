@@ -947,15 +947,16 @@ blockquote p {
 .show-page .header-link { font-size: 0.65rem; letter-spacing: 0.06em; }
 .show-main { width: min(100% - 3rem, 36rem); margin: 2.5rem auto 4rem; }
 .show-eyebrow { margin: 0 0 0.6rem; color: var(--rose); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase; }
-.show-hero h1 { margin: 0; font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(4rem, 12vw, 6rem); font-weight: 500; letter-spacing: -0.04em; line-height: 1; }
+.show-hero { text-align: center; }
+.show-hero h1 { margin: 0; font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(2.7rem, 9vw, 4.5rem); font-weight: 500; letter-spacing: -0.04em; line-height: 1; }
 .show-details { margin: 1.4rem 0 1rem; }
 .show-details p { margin: 0.35rem 0; font-size: 1rem; line-height: 1.6; }
 .show-details .show-date { font-size: 1.2rem; font-weight: 600; }
 .show-performers { margin: 0; font-size: 0.85rem; line-height: 1.8; }
 .show-performers span { color: var(--blush); margin-right: 0.35rem; }
 .show-ticket { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--line-light); }
-.ticket-price { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.3rem; }
-.ticket-price > strong { font-size: 2rem; font-weight: 600; letter-spacing: -0.04em; }
+.ticket-price { display: flex; align-items: center; justify-content: center; gap: 1.25rem; margin-bottom: 1.3rem; }
+.ticket-price > strong { flex-shrink: 0; padding-right: 0.15em; font-size: 2rem; font-weight: 600; letter-spacing: 0; line-height: 1.3; white-space: nowrap; }
 .ticket-price > p { margin: 0; font-size: 0.9rem; line-height: 1.6; }
 .ticket-price > p > span { display: block; color: var(--blush); font-size: 0.8rem; }
 .show-ticket .purchase-button { min-height: 56px; padding: 1rem; border: 0; border-radius: 4px; background: var(--blush); color: var(--ink); box-shadow: none; font-size: 1rem; letter-spacing: 0; text-transform: none; }
