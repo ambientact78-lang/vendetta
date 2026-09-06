@@ -922,3 +922,78 @@ blockquote p {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* TRYOUTS show and ticket page */
+.show-page { background: #260913; }
+.show-page .site-header { position: relative; max-width: 1280px; margin: auto; padding: 1.8rem 2rem; }
+.show-page .header-link { font-size: 0.65rem; letter-spacing: 0.08em; }
+.show-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); align-items: center; gap: clamp(3rem, 6vw, 6rem); max-width: 1200px; margin: auto; padding: 3rem 2rem 4rem; color: var(--cream); }
+.show-artwork { min-width: 0; }
+.show-cover { width: 100%; aspect-ratio: 1; object-fit: cover; border: 1px solid #ffffff26; box-shadow: 0 24px 60px #10000655; }
+.show-artwork > p { display: flex; justify-content: space-between; gap: 1rem; color: var(--rose); font-size: 0.75rem; letter-spacing: 0.05em; line-height: 1.6; }
+.show-artwork > p span { color: var(--blush); font-size: 0.65rem; letter-spacing: 0; }
+.show-copy .section-number { margin: 0 0 1rem; color: var(--rose); font-size: 0.7rem; letter-spacing: 0.15em; }
+.show-copy h1 { margin: 0; font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(2.8rem, 4.8vw, 4.25rem); font-weight: 500; line-height: 1.02; letter-spacing: -0.04em; }
+.show-copy h1 em { color: var(--rose); font-weight: 500; }
+.show-details { display: grid; grid-template-columns: 1fr 1.2fr; gap: 1rem; margin: 1.6rem 0; padding: 1.2rem 0; border-block: 1px solid var(--line-light); }
+.show-details dt { margin-bottom: 0.45rem; color: var(--rose); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.show-details dd { margin: 0; font-size: 0.95rem; font-weight: 600; line-height: 1.5; }
+.show-details dd span { display: block; color: var(--blush); font-size: 0.85rem; font-weight: 400; }
+.ticket-price { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; margin-bottom: 1rem; }
+.show-performers { margin: 0 0 1.5rem; }
+.show-performers h2 { margin: 0 0 0.5rem; color: var(--rose); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.show-performers p { margin: 0; font-size: 0.85rem; line-height: 1.8; }
+.show-performers p span { padding-inline: 0.2rem; color: var(--rose); }
+.show-performers em { color: var(--blush); font-style: normal; white-space: nowrap; }
+.ticket-price > div > strong { display: block; font-size: 2rem; font-weight: 600; letter-spacing: -0.05em; line-height: 1.2; }
+.ticket-price > div > span { display: block; margin-top: 0.3rem; color: var(--blush); font-size: 0.75rem; line-height: 1.5; }
+.ticket-availability { display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; margin: 0; padding: 0.5rem 0.65rem; border: 1px solid #e88fa340; border-radius: 4px; color: var(--blush); font-size: 0.7rem; }
+.ticket-availability > span { width: 5px; height: 5px; border-radius: 50%; background: var(--rose); }
+.show-ticket .purchase-button { min-height: 56px; padding: 1rem; justify-content: space-between; border: 0; border-radius: 6px; background: var(--blush); color: var(--ink); box-shadow: none; font-size: 0.9rem; letter-spacing: 0; text-transform: none; }
+.show-ticket .purchase-button:hover { background: var(--cream); }
+.ticket-delivery { margin: 0.85rem 0 0; color: var(--blush); font-size: 0.8rem; line-height: 1.65; }
+.show-countdown { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1.5rem; padding-top: 1.2rem; border-top: 1px solid var(--line-light); }
+.countdown-label { margin: 0; color: var(--blush); font-size: 0.7rem; line-height: 1.5; }
+.countdown-units { display: flex; gap: 1.2rem; }
+.countdown-units > div { display: grid; gap: 0.2rem; text-align: center; }
+.countdown-units strong { font-size: 1.15rem; font-weight: 500; font-variant-numeric: tabular-nums; }
+.countdown-units span { color: var(--rose); font-size: 0.6rem; }
+.ticket-steps { padding: 3rem max(2rem, calc((100vw - 1136px) / 2)); background: var(--cream); }
+.ticket-steps h2 { margin: 0 0 1.8rem; font-size: 1.3rem; font-weight: 600; letter-spacing: -0.03em; }
+.ticket-steps ol { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; padding: 0; margin: 0; list-style: none; }
+.ticket-steps li { display: flex; align-items: flex-start; gap: 0.9rem; }
+.ticket-steps li > span { padding-top: 0.15rem; color: var(--wine); font-size: 0.8rem; }
+.ticket-steps h3 { margin: 0 0 0.5rem; font-size: 0.95rem; }
+.ticket-steps p { margin: 0; color: #64414c; font-size: 0.85rem; line-height: 1.7; }
+.show-album { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; padding: 4rem max(2rem, calc((100vw - 1136px) / 2)); background: var(--powder); }
+.show-album .section-number { margin-bottom: 1.25rem; }
+.show-album h2 { max-width: 26rem; margin: 0; font-family: "Cormorant Garamond", Georgia, serif; font-size: 3rem; font-weight: 500; line-height: 1.05; letter-spacing: -0.035em; }
+.show-album h2 em { color: var(--wine); font-weight: 500; }
+.album-credit { margin-top: 1.5rem; font-size: 0.8rem; line-height: 1.8; color: var(--wine); }
+.album-link { display: inline-block; padding: 0.75rem 0; border-bottom: 1px solid var(--wine); font-size: 0.8rem; font-weight: 700; }
+.show-page .site-footer { padding-block: 2.5rem; }
+.show-page .footer-brand { font-size: 2rem; }
+.show-page .footer-bottom { margin-top: 1.5rem; }
+@media (max-width: 760px) {
+  .show-page .site-header { padding: 1.2rem; }
+  .show-page .brand-mark { font-size: 1.5rem; }
+  .show-page .header-link { font-size: 0.65rem; }
+  .show-hero { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding: 0.8rem 1.2rem 2rem; max-width: 540px; }
+  .show-artwork { display: flex; align-items: center; gap: 0.9rem; }
+  .show-cover { width: 64px; border-radius: 3px; }
+  .show-artwork > p { display: grid; gap: 0.2rem; margin: 0; font-size: 0.9rem; }
+  .show-artwork > p span { font-size: 0.7rem; }
+  .show-copy .section-number { margin-bottom: 0.7rem; font-size: 0.65rem; }
+  .show-copy h1 { font-size: clamp(2.3rem, 10.4vw, 3.4rem); }
+  .show-details { margin: 1.25rem 0; padding: 1rem 0; gap: 0.7rem; }
+  .show-details dd { font-size: 0.9rem; }
+  .ticket-price > div > strong { font-size: 1.85rem; }
+  .show-countdown { margin-top: 1.2rem; padding-top: 1rem; }
+  .countdown-units { gap: 1rem; }
+  .ticket-steps { padding: 2rem 1.2rem; }
+  .ticket-steps ol { grid-template-columns: 1fr; gap: 1.4rem; }
+  .ticket-steps h2 { font-size: 1.2rem; margin-bottom: 1.5rem; }
+  .show-album { grid-template-columns: 1fr; gap: 1.8rem; padding: 2.5rem 1.2rem; }
+  .show-album h2 { font-size: 2.6rem; }
+  .show-album .story-body { padding-top: 1.5rem; }
+}
