@@ -3,7 +3,9 @@
 body { margin: 0; min-height: 100svh; background: radial-gradient(ellipse at 50% -15%, #8f294c 0, #4b1026 35%, #250812 75%); }
 a { color: inherit; text-decoration: none; }
 a:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
-.links-page { width: min(100% - 2rem, 440px); min-height: 100svh; margin: auto; padding: clamp(14px, 2.5vh, 28px) 0 12px; display: flex; flex-direction: column; justify-content: center; }
+.links-page { width: min(100% - 2rem, 440px); min-height: 100svh; margin: auto; padding: clamp(14px, 2.5vh, 28px) 0 12px; display: flex; flex-direction: column; justify-content: flex-start; }
+.links-page::before { content: ""; flex: 3 1 0; }
+.links-page::after { content: ""; flex: 7 1 0; }
 .feature { text-align: center; }
 .eyebrow { margin: 0 0 8px; color: #f3a6b8; font-size: .65rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; }
 h1 { margin: 0 0 10px; font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(1.55rem, 5.8vw, 2.1rem); font-weight: 500; line-height: 1.05; }
