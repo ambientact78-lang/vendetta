@@ -18,7 +18,12 @@
   <body>
     <header class="site-header">
       <a class="brand-mark" href="#home" aria-label="Vendetta, back to top">Vendetta</a>
-      <a class="header-link" href="#listen">Listen now</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-navigation"><span></span><span></span><span></span></button>
+      <nav class="header-nav" id="main-navigation" aria-label="Main navigation">
+        <a class="header-link" href="links.html">Links</a>
+        <a class="header-link" href="#videos">Watch</a>
+        <a class="header-link" href="#listen">Listen now</a>
+      </nav>
     </header>
 
     <main>
@@ -182,5 +187,31 @@
       </div>
     </footer>
 
+    <script>
+      const header = document.querySelector('.site-header');
+      const menuButton = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('#main-navigation');
+      function setMenuOpen(open) {
+        menuButton.setAttribute('aria-expanded', String(open));
+        menuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      }
+      menuButton.addEventListener('click', () => setMenuOpen(menuButton.getAttribute('aria-expanded') !== 'true'));
+      menu.addEventListener('click', (event) => {
+        if (event.target.closest('a')) setMenuOpen(false);
+      });
+      document.addEventListener('click', (event) => {
+        if (!header.contains(event.target)) setMenuOpen(false);
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+          setMenuOpen(false);
+          menuButton.focus();
+        }
+      });
+      header.addEventListener('focusout', (event) => {
+        if (!header.contains(event.relatedTarget)) setMenuOpen(false);
+      });
+      window.matchMedia('(max-width: 700px)').addEventListener('change', () => setMenuOpen(false));
+    </script>
   </body>
 </html>

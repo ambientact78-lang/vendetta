@@ -56,13 +56,33 @@ img {
   text-transform: uppercase;
 }
 
+.menu-toggle {
+  display: none;
+}
+
+.header-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2.5rem);
+}
+
 .header-link {
-  border-bottom: 1px solid currentColor;
+  border-bottom: 0;
+  text-decoration: none;
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.2em;
   padding-bottom: 0.35rem;
   text-transform: uppercase;
+}
+
+.header-link:hover,
+.header-link:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.35em;
 }
 
 .hero {
@@ -797,6 +817,7 @@ blockquote p {
     padding-top: 1.4rem;
   }
 
+
   .brand-mark {
     font-size: 1.65rem;
   }
@@ -996,4 +1017,53 @@ blockquote p {
   .show-details .show-date { font-size: 1.1rem; }
   .show-ticket { margin-top: 1.5rem; }
   .ticket-entry { margin-top: 2rem; }
+}
+
+@media (max-width: 700px) {
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 9px;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+  }
+
+  .header-nav {
+    display: none;
+    top: 100%;
+    left: 0;
+    right: 0;
+    transform: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    max-height: calc(100dvh - 80px);
+    overflow-y: auto;
+    padding: 0.5rem 1.2rem 1.25rem;
+    background: #350b1a;
+    box-shadow: 0 12px 20px rgba(20, 2, 10, 0.2);
+  }
+
+  .menu-toggle[aria-expanded="true"] + .header-nav {
+    display: flex;
+  }
+
+  .header-nav .header-link {
+    padding: 0.8rem 0;
+    text-align: center;
+  }
+
 }
